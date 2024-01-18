@@ -4,8 +4,11 @@
     <div class="container py-5">
         <h1>Lista dei nostri fumetti</h1>
 
+        <div class="text-end">
+            <a class="btn btn-primary" href="{{ route('comics.create') }}">Inserisci un fumetto</a>
+        </div>
 
-        <table class="table table-dark table-hover">
+        <table class="table table-dark table-hover mt-3">
             <thead>
               <tr>
                 <th scope="col">Id</th>
