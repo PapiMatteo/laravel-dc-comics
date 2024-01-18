@@ -6,7 +6,7 @@
 
         <div class="row justify-content-center mt-5">
             <div class="col-6 mb-5">
-                <form action="">
+                <form action="{{ route('comics.store') }}" method="POST">
                     @csrf
                     
                     <div class="mb-3">
