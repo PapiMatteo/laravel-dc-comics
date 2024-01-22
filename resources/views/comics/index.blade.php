@@ -41,7 +41,7 @@
                             <form action="{{ route('comics.destroy', ['comic' => $comic->id]) }}" class="d-inline-block" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button class="btn btn-danger" type="submit">
+                                <button class="btn btn-danger btn-delete" type="submit" data-title="{{ $comic->title }}">
                                   Elimina
                                 </button>
                             </form>
@@ -51,5 +51,7 @@
               
             </tbody>
           </table>
+
+          @include('partials.delete-modal')
     </div>
 @endsection
